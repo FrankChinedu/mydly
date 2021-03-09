@@ -1,12 +1,17 @@
 import { Route } from 'react-router-dom'
 
-import Home from '../pages/Home'
+import Login from '../pages/Login'
 import ROUTES from './list'
 
 const routes = [
 	{
-		component: Home,
+		component: Login,
 		path: ROUTES.home,
+		RouteType: Route,
+	},
+	{
+		component: Login,
+		path: ROUTES.login,
 		RouteType: Route,
 	},
 ]

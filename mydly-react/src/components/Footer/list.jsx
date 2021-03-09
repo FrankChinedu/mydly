@@ -4,8 +4,11 @@ const List = ({ list = [] }) => {
 	return (
 		<ul>
 			{list.length
-				? list.map((item) => (
-						<li className='text-primary-gray py-1 cursor-pointer capitalize'>
+				? list.map((item, id) => (
+						<li
+							className='text-sec-white py-1 cursor-pointer capitalize'
+							key={id}
+						>
 							{item}
 						</li>
 				  ))

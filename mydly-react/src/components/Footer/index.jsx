@@ -38,10 +38,11 @@ const Footer = () => {
 			</div>
 			<div className='border-t border-primary-gray flex text-sec-white pt-4 justify-between'>
 				<p>2020 SoundFit - Made by XXX</p>
-				<div className='flex '>
-					<Fb className='w-3' />
-					<Tw className='w-3' />
-					<Yt className='w-3' />
+				<div className='grid grid-cols-4 gap-x-2'>
+					<Fb className='h-5' />
+					<div></div>
+					<Tw className='h-6' />
+					<Yt className='h-6' />
 				</div>
 			</div>
 		</div>
