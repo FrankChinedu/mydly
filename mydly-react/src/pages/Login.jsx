@@ -6,10 +6,11 @@ import Input from '../components/Input'
 import Checkbox from '../components/Input/checkbox'
 import Button from '../components/Input/button'
 import CONSTANTS from '../utils/constants'
+import ROUTES from '../routes/list'
 
 import http from '../utils/http'
 
-const Home = () => {
+const Login = () => {
 	const [data, setData] = useState({
 		email: '',
 		password: '',
@@ -48,8 +49,8 @@ const Home = () => {
 
 	return (
 		<div className='flex justify-center content-center '>
-			<div className='w-4/12 p-10 border border-primary-gray text-primary-white'>
-				<h3 className='text-center text-4xl font-extralight mb-7'>Login</h3>
+			<div className='md:w-4/12 w-10/12 p-10 border border-primary-gray text-primary-white'>
+				<h3 className='text-center text-4xl font-medium mb-7'>Login</h3>
 				<Form onSubmit={handleSubmit}>
 					<Input
 						onChange={handleChange}
@@ -83,7 +84,7 @@ const Home = () => {
 						/>
 						<p className='text-sm text-center'>
 							Prima volta su SoundFit?{' '}
-							<Link to='/' className='underline text-white'>
+							<Link to={ROUTES.signUp} className='underline text-white'>
 								{CONSTANTS.REGISTRATI}
 							</Link>
 						</p>
@@ -94,4 +95,4 @@ const Home = () => {
 	)
 }
 
-export default Home
+export default Login

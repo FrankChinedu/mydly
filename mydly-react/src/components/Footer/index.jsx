@@ -9,16 +9,16 @@ import CONSTANTS from '../../utils/constants'
 
 const Footer = () => {
 	return (
-		<div>
-			<div className='grid grid-cols-6 py-7'>
-				<div className='col-span-2'>
+		<footer>
+			<div className='md:grid md:grid-cols-6 py-7 flex flex-col'>
+				<div className='col-span-2 md:mb-0 mb-4'>
 					<h2 className='capitalize font-extrabold'>{CONSTANTS.APP_NAME}</h2>
 					<p className='text-primary-gray pt-1'>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
 						saepe itaque, sed sequi perferendis
 					</p>
 				</div>
-				<div className='col-span-3 flex justify-around'>
+				<div className='col-span-3 flex md:justify-around justify-between'>
 					<div>
 						<h4>Azienda</h4>
 						<List list={['Home', 'About Us', 'Blog', 'Contattaci']} />
@@ -45,7 +45,7 @@ const Footer = () => {
 					<Yt className='h-6' />
 				</div>
 			</div>
-		</div>
+		</footer>
 	)
 }
 
