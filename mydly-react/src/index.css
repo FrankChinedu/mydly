@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300&display=swap');
+
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, html {
+    font-family: 'Yantramanav', sans-serif;
+}
