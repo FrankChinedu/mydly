@@ -12,6 +12,6 @@
  ```
   - cd mydly-vue
   - run npm i
-  - run npm start
+  - run npm run serve
  ```
  

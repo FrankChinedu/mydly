@@ -1,5 +1,8 @@
 <template>
-	<div id="app">
+	<div
+		id="app"
+		class="bg-primary-dark min-h-screen px-10 py-5 text-primary-white flex flex-col justify-between"
+	>
 		<Navbar />
 		<router-view></router-view>
 		<Footer />
