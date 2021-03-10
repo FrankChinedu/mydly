@@ -6,6 +6,8 @@ import Logo from '../Logo'
 import Route from '../../routes/list'
 import { AppContext } from '../../context/appContext'
 
+import ImgIcon from '../../icons/img/icon.png'
+
 const RouteValue = {
 	[Route.home]: CONSTANTS.REGISTRATI,
 	[Route.login]: CONSTANTS.REGISTRATI,
@@ -45,20 +47,30 @@ export default function NavBar() {
 					{CONSTANTS.APP_NAME}
 				</h1>
 				{auth && (
-					<>
-						<li>Home</li>
-						<li>Generi</li>
-						<li>Preferiti</li>
-					</>
+					<ul className='mx-4 grid grid-cols-3 gap-x-4 my-auto text-sm'>
+						<li className='cursor-pointer'>Home</li>
+						<li className='cursor-pointer'>Generi</li>
+						<li className='cursor-pointer'>Preferiti</li>
+					</ul>
 				)}
 			</div>
 			<div className='flex justify-center'>
 				<Logo />
 			</div>
 			<div className='content-center flex flex-wrap justify-end'>
-				<Link to={togo} className='cursor-pointer'>
-					<p className='font-light'>{name}</p>
-				</Link>
+				{auth ? (
+					<>
+						<div></div>
+						<div></div>
+						<div className='w-1/12'>
+							<img src={ImgIcon} alt='avatar' className=' rounded-full' />
+						</div>
+					</>
+				) : (
+					<Link to={togo} className='cursor-pointer'>
+						<p className='font-light'>{name}</p>
+					</Link>
+				)}
 			</div>
 		</header>
 	)

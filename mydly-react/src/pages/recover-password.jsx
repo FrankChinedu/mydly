@@ -1,9 +1,11 @@
 import React, { useState, useContext, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import Form from '../components/Form'
 import Input from '../components/Input'
 import Button from '../components/Input/button'
 import { AppContext } from '../context/appContext'
+import Route from '../routes/list'
 
 import http from '../utils/http'
 
@@ -83,7 +85,9 @@ const RecoverPassword = () => {
 							className='w-2/4 py-2 mr-4 text-black'
 							type='submit'
 						/>
-						<p className='my-auto underline cursor-pointer'>annulla</p>
+						<p className='my-auto underline cursor-pointer'>
+							<Link to={Route.login}>annulla</Link>
+						</p>
 					</div>
 				</Form>
 			</div>
