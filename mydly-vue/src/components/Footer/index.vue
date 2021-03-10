@@ -20,7 +20,7 @@
 				<div>
 					<h4>Legal</h4>
 					<List
-						:lists="['Privacy Policy', 'Cookie Policy', 'Terms andConditions']"
+						:lists="['Privacy Policy', 'Cookie Policy', 'Terms and Conditions']"
 					/>
 				</div>
 			</div>

@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import Login from '../pages/Login'
 import SignUp from '../pages/SignUp'
+import RecoverPassword from '../pages/RecoverPassword'
 import routes from './list'
 
 Vue.use(VueRouter)
@@ -36,6 +37,14 @@ const Routes = {
 			meta: {
 				auth: false,
 				togo: 'home',
+			},
+		},
+		{
+			path: routes.recover_password,
+			name: 'recover_password',
+			component: RecoverPassword,
+			meta: {
+				auth: true,
 			},
 		},
 	],

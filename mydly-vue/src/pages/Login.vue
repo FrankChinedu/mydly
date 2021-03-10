@@ -11,7 +11,6 @@
 					type="email"
 					name="email"
 					v-model="email"
-					:value="email"
 				/>
 				<Input
 					placeholder="Password"
@@ -19,7 +18,6 @@
 					type="password"
 					name="password"
 					v-model="password"
-					:value="password"
 				/>
 				<div class="flex flex-wrap content-center">
 					<Checkbox
