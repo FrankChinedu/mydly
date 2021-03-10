@@ -7,6 +7,8 @@ import Route from '../../routes/list'
 import { AppContext } from '../../context/appContext'
 
 import ImgIcon from '../../icons/img/icon.png'
+import SearchIcon from '../../icons/search'
+import BellIcon from '../../icons/bell'
 
 const RouteValue = {
 	[Route.home]: CONSTANTS.REGISTRATI,
@@ -60,9 +62,9 @@ export default function NavBar() {
 			<div className='content-center flex flex-wrap justify-end'>
 				{auth ? (
 					<>
-						<div></div>
-						<div></div>
-						<div className='w-1/12'>
+						<SearchIcon className='w-5 mr-4' />
+						<BellIcon className='w-5 mr-4' />
+						<div className='w-10'>
 							<img src={ImgIcon} alt='avatar' className=' rounded-full' />
 						</div>
 					</>

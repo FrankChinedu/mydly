@@ -62,7 +62,7 @@ const RecoverPassword = () => {
 					minus saepe laudantium rerum atque dolorem.
 				</p>
 			</div>
-			<div className='w-4/12 p-5 text-primary-white m-auto'>
+			<div className='md:w-4/12 w-10/12 p-5 text-primary-white m-auto'>
 				<Form onSubmit={handleSubmit}>
 					<Input
 						onChange={handleChange}
