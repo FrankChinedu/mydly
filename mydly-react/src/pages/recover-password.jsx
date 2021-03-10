@@ -52,7 +52,6 @@ const RecoverPassword = () => {
 
 	return (
 		<div className='flex flex-col justify-center content-center flex-wrap'>
-			{/* <div> */}
 			<div className='w-7/12 p-5 text-primary-white m-auto'>
 				<h3 className='text-center text-4xl font-extralight mb-5'>
 					Recover your Password
@@ -91,7 +90,6 @@ const RecoverPassword = () => {
 					</div>
 				</Form>
 			</div>
-			{/* </div> */}
 		</div>
 	)
 }
